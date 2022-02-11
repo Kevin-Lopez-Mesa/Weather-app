@@ -1,0 +1,24 @@
+
+
+<article class="card h-100 w-100">
+  <div class="card-body">
+
+    <div class="input-group mb-3">
+        <span (click)="getWeather()" class="input-group-text" id="basic-addon1">@</span>
+        <input [(ngModel)]="city" type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="basic-addon1">
+    </div>
+
+    <h1 class="app text-center">
+          WEATHER APP
+    </h1>
+
+    <div class="info">
+        <h1 class="card-title fs-1 fw-bold text-center"> {{ temp }} </h1>
+        <p class="card-text text-center"> {{ weather }} </p>
+        <p class="fs-6 text-center"> {{ day }} </p>
+        <h3 class="fs3 text-center"> {{ city }} </h3>
+    </div>
+    
+
+  </div>
+</article>
